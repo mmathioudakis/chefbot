@@ -1,0 +1,46 @@
+{
+  "name": "chefbot",
+  "version": "0.0.1",
+  "description": "a Slack bot that offers lunch options",
+  "keywords": ["food", "slack", "bot", "lunch"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mmathioudakis/chefbot"
+  },
+  "main": "lib/chefbot.js",
+  "bin": {
+    "chefbot": "bin/bot.js"
+  },
+  "scripts": {
+    "start": "node bin/bot.js",
+    "test": "xo data/jokesFetcher.js bin/bot.js lib/chefbot.js"
+  },
+  "author": "Michael Mathioudakis <michalis@michalis.co>",
+  "credits": "Luciano Mammino <lucianomammino@gmail.com>", 
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "dependencies": {
+    "async": "^1.4.1",
+    "progress": "^1.1.8",
+    "request": "^2.60.0",
+    "slackbots": "^0.3.0",
+    "sqlite3": "^3.0.10"
+  },
+  "devDependencies": {
+    "xo": "^0.5.2"
+  },
+  "xo": {
+    "space": 4,
+    "rules": {
+      "camelcase": [
+        2,
+        {
+          "properties": "never"
+        }
+      ]
+    }
+  },
+  "homepage": "https://github.com/mmathioudakis/chefbot#readme"
+}
