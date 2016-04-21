@@ -2,7 +2,9 @@
 
 'use script';
 
-var ChefBot = require('../lib/chefbot');
+// select the instance of chef to run
+// var ChefBot = require('../lib/newchef'); // development
+var ChefBot = require('../lib/chefbot'); // stable
 
 var token = process.env.BOT_API_KEY;
 var dbPath = process.env.BOT_DB_PATH;
